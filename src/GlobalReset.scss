@@ -1,9 +1,11 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: smooth 1s ease-in-out;
 }
 
 body {
-    background: url('/modern-background-with-lines.jpg');
+  background: #212121;
 }

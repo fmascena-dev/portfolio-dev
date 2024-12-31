@@ -1,12 +1,27 @@
-import './GlobalReset.scss'
+import './GlobalReset.scss';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Header from './Components/Header/Header.jsx';
 import Footer from './Components/Footer/Footer.jsx';
-
+import Home from './Components/Home/Home.jsx';
+import Technologies from './Components/Technologies/Technologies.jsx';
 
 export default function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: true,
+    });
+  }, []);
+
   return (
     <>
       <Header />
+      <Home />
+      <Technologies />
       <Footer />
     </>
   );

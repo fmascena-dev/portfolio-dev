@@ -1,0 +1,86 @@
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem;
+}
+
+.home-description {
+  display: flex;
+  flex-direction: column;
+  color: #e1e1e1;
+  width: 70%;
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h1 {
+    color: #00d9ff;
+    padding: 0.5rem 0;
+    font-size: 2.5rem;
+  }
+
+  span {
+    color: #00d9ff;
+  }
+
+  p {
+    font-size: 1.3rem;
+    line-height: 1.3;
+    font-weight: 500;
+    text-align: justify;
+  }
+}
+
+.home-image > img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.btn-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-curriculo {
+  display: inline-block;
+  position: relative;
+  background-color: transparent;
+  margin-top: 2rem;
+  color: #e1e1e1;
+  font-size: 1.5rem;
+  border: 1px solid #444;
+  padding: 0.5rem 1.2rem;
+  background-color: transparent;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 1s ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 255, 255);
+    z-index: -1;
+    transition: all 1s ease-in-out;
+    transform: translateX(-100%);
+  }
+
+  &:hover {
+    color: #212121;
+  }
+
+  &:hover:before {
+    transform: translateX(0);
+    color: #212121;
+  }
+}

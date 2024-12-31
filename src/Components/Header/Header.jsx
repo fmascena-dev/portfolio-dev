@@ -33,17 +33,17 @@ export default function Header() {
           onClick={() => handleMenuClick("home")}
         >
           <FaHome className={styles.icon} />
-          <span>Home</span>
+          <span>Início</span>
         </a>
         <a
-          href="#about"
+          href="#tecnologias"
           className={`${styles.navItem} ${
-            selected === "about" ? styles.selected : ""
+            selected === "tecnologias" ? styles.selected : ""
           }`}
-          onClick={() => handleMenuClick("about")}
+          onClick={() => handleMenuClick("tecnologias")}
         >
           <FaUser className={styles.icon} />
-          <span>About</span>
+          <span>Tecnologias</span>
         </a>
         <a
           href="#work"
