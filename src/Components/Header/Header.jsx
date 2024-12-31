@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./Header.module.scss";
-import { FaHome, FaUser, FaBriefcase, FaBlog, FaImages } from "react-icons/fa";
+import { FaHome, FaBlog, FaImages, FaLaptopCode, FaCode } from "react-icons/fa";
 
 export default function Header() {
   const [time, setTime] = useState("");
@@ -28,9 +28,9 @@ export default function Header() {
         <a
           href="#home"
           className={`${styles.navItem} ${
-            selected === "home" ? styles.selected : ""
+            selected === 'home' ? styles.selected : ''
           }`}
-          onClick={() => handleMenuClick("home")}
+          onClick={() => handleMenuClick('home')}
         >
           <FaHome className={styles.icon} />
           <span>Início</span>
@@ -38,29 +38,29 @@ export default function Header() {
         <a
           href="#tecnologias"
           className={`${styles.navItem} ${
-            selected === "tecnologias" ? styles.selected : ""
+            selected === 'tecnologias' ? styles.selected : ''
           }`}
-          onClick={() => handleMenuClick("tecnologias")}
+          onClick={() => handleMenuClick('tecnologias')}
         >
-          <FaUser className={styles.icon} />
+          <FaCode className={styles.icon} />
           <span>Tecnologias</span>
         </a>
         <a
-          href="#work"
+          href="#projetos"
           className={`${styles.navItem} ${
-            selected === "work" ? styles.selected : ""
+            selected === 'projetos' ? styles.selected : ''
           }`}
-          onClick={() => handleMenuClick("work")}
+          onClick={() => handleMenuClick('projetos')}
         >
-          <FaBriefcase className={styles.icon} />
-          <span>Work</span>
+          <FaLaptopCode className={styles.icon} />
+          <span>Projetos</span>
         </a>
         <a
           href="#blog"
           className={`${styles.navItem} ${
-            selected === "blog" ? styles.selected : ""
+            selected === 'blog' ? styles.selected : ''
           }`}
-          onClick={() => handleMenuClick("blog")}
+          onClick={() => handleMenuClick('blog')}
         >
           <FaBlog className={styles.icon} />
           <span>Blog</span>
@@ -68,9 +68,9 @@ export default function Header() {
         <a
           href="#gallery"
           className={`${styles.navItem} ${
-            selected === "gallery" ? styles.selected : ""
+            selected === 'gallery' ? styles.selected : ''
           }`}
-          onClick={() => handleMenuClick("gallery")}
+          onClick={() => handleMenuClick('gallery')}
         >
           <FaImages className={styles.icon} />
           <span>Gallery</span>
