@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background:transparent;
+  color: #fff;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+  border: 1px solid #666;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+  padding: 0.25rem;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.2rem 1rem;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .icon {
+    font-size: 1rem;
+  }
+}
+
+.selected {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.8);
+  color: #f2f2f2;
+}
