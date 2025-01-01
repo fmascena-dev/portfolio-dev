@@ -21,7 +21,7 @@ export default function Contato() {
     <section className="form-container" id="contato">
       <h1>Entre em Contato</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="form-group">
+        <div data-aos="fade-right" className="form-group">
           <label htmlFor="nome">Nome Completo:</label>
           <input
             id="nome"
@@ -33,8 +33,8 @@ export default function Contato() {
           )}
         </div>
 
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
+        <div data-aos="fade-left" className="form-group">
+          <label htmlFor="email">Email:</label>
           <input
             id="email"
             type="email"
@@ -51,8 +51,8 @@ export default function Contato() {
           )}
         </div>
 
-        <div className="form-group">
-          <label htmlFor="telefone">Telefone</label>
+        <div data-aos="fade-right" className="form-group">
+          <label htmlFor="telefone">Telefone:</label>
           <input
             id="telefone"
             type="tel"
@@ -68,8 +68,8 @@ export default function Contato() {
             <p className="error-message">{errors.telefone.message}</p>
           )}
         </div>
-        <div className="form-group">
-          <label htmlFor="assunto">Assunto</label>
+        <div data-aos="fade-left" className="form-group">
+          <label htmlFor="assunto">Assunto:</label>
           <input
             id="assunto"
             type="text"
@@ -80,8 +80,8 @@ export default function Contato() {
           )}
         </div>
 
-        <div className="form-group">
-          <label htmlFor="mensagem">Mensagem</label>
+        <div data-aos="fade-right" className="form-group">
+          <label htmlFor="mensagem">Mensagem:</label>
           <textarea
             id="mensagem"
             rows="5"
@@ -92,7 +92,7 @@ export default function Contato() {
           )}
         </div>
 
-        <button type="submit" className="submit-button">
+        <button data-aos="fade-left" type="submit" className="submit-button">
           Enviar
         </button>
       </form>

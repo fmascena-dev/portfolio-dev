@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from './Header.module.scss';
-import { FaHome, FaBlog, FaImages, FaLaptopCode, FaCode } from 'react-icons/fa';
+import { FaHome, FaImages, FaLaptopCode, FaCode } from 'react-icons/fa';
+import { MdContactMail } from 'react-icons/md';
 
 export default function Header() {
   const handleScroll = (event) => {
@@ -70,14 +71,14 @@ export default function Header() {
           <span>Projetos</span>
         </a>
         <a
-          href="#blog"
+          href="#contato"
           className={`${styles.navItem} ${
-            selected === 'blog' ? styles.selected : ''
+            selected === 'contato' ? styles.selected : ''
           }`}
-          onClick={(event) => handleMenuClick('blog', event)}
+          onClick={(event) => handleMenuClick('contato', event)}
         >
-          <FaBlog className={styles.icon} />
-          <span>Blog</span>
+          <MdContactMail className={styles.icon} />
+          <span>Contato</span>
         </a>
         <a
           href="#gallery"
