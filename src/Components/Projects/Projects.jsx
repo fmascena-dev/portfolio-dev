@@ -61,30 +61,37 @@ export default function Projects() {
   ];
 
   return (
-    <main id="projetos">
+      <main id="projetos">
+        <h1>Projetos</h1>
       <section className="card-container">
-        {Projetos.map((project) => (
-          <div key={project.id} className="card">
+        {Projetos.map((project, index) => (
+
+          <div
+            data-aos="flip-up"
+            data-aos-delay={`${index * 50}`}
+            key={project.id}
+            className="card"
+          >
             <div className="card-image">
               <img src={project.img} alt={project.title} />
             </div>
-            <div className='card-description'>
-            <p className="card-title">{project.title}</p>
-            <p className="card-body">{project.description}</p>
-            <div className="btns">
-              <button className="btn-github">
-                <FaGithub />
-                <a href={project.githubLink} target="_blank">
-                  GITHUB
-                </a>
-              </button>
-              <figure className="btn-page">
-                <TbWorldShare />
-                <a href={project.pageLink} target="_blank">
-                  PAGE
-                </a>
-              </figure>
-            </div>
+            <div className="card-description">
+              <p className="card-title">{project.title}</p>
+              <p className="card-body">{project.description}</p>
+              <div className="btns">
+                <button className="btn-github">
+                  <FaGithub />
+                  <a href={project.githubLink} target="_blank">
+                    GITHUB
+                  </a>
+                </button>
+                <figure className="btn-page">
+                  <TbWorldShare />
+                  <a href={project.pageLink} target="_blank">
+                    PAGE
+                  </a>
+                </figure>
+              </div>
             </div>
           </div>
         ))}
