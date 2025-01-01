@@ -7,6 +7,7 @@ import Footer from './Components/Footer/Footer.jsx';
 import Home from './Components/Home/Home.jsx';
 import Technologies from './Components/Technologies/Technologies.jsx';
 import Projects from './Components/Projects/Projects.jsx';
+import Contact from './Components/Contact/Contact.jsx';
 
 export default function App() {
   useEffect(() => {
@@ -24,6 +25,7 @@ export default function App() {
       <Home />
       <Technologies />
       <Projects />
+      <Contact />
       <Footer />
     </>
   );
