@@ -4,6 +4,12 @@ export default function Home() {
   return (
     <main id="home">
       <section>
+        <div className="video-container">
+          <video className="background-video" autoPlay loop muted>
+            <source src="/video_home.mp4" type="video/mp4" />
+          </video>
+          <div className="overlay"></div>
+        </div>
         <div className="home-description">
           <h2>Olá, eu sou</h2>
           <h1>&lt;FelipeMascena /&gt;</h1>
