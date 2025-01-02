@@ -11,7 +11,7 @@ export default function Contato() {
 
   const onSubmit = (data) => {
     alert(
-      'Mensagem enviada com sucesso! Obrigado pelo seu contato, entrarei em contato logo em breve!',
+      'Mensagem enviada com sucesso! Obrigado pelo seu contato, responderei em breve!',
     );
     console.log('Dados enviados:', data);
     reset();
@@ -92,7 +92,7 @@ export default function Contato() {
           )}
         </div>
 
-        <button data-aos="fade-left" type="submit" className="submit-button">
+        <button type="submit" className="submit-button">
           Enviar
         </button>
       </form>
