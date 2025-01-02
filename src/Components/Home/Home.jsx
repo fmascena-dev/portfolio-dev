@@ -5,7 +5,15 @@ export default function Home() {
     <main id="home">
       <section>
         <div className="video-container">
-          <video className="background-video" autoPlay loop muted>
+          <video
+            className="background-video"
+            autoPlay
+            loop
+            muted
+            playsInline
+            disablePictureInPicture
+            controlsList="nodownload nofullscreen noplaybackrate"
+          >
             <source src="/video_home.mp4" type="video/mp4" />
           </video>
           <div className="overlay"></div>
