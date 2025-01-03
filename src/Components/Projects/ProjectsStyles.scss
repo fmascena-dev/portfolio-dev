@@ -21,9 +21,8 @@
 .card-container {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
   border-radius: 10px;
-  
 
   //   @media (min-width: 200px) and (max-width: 459px) {
   //     grid-template-columns: 1fr;
@@ -42,11 +41,11 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   width: 60%;
   border-radius: 1rem;
-  background: #121212;
-  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 
   &:nth-child(odd) {
     align-self: flex-start;
@@ -59,8 +58,6 @@
   }
 }
 
-
-
 .card-description {
   width: 60%;
   padding: 1rem;
@@ -71,7 +68,6 @@
   font-size: 2rem;
   font-weight: 600;
   color: #e0e0e0;
-  margin: 15px 0 0 0px;
 }
 
 .card-image {
@@ -86,7 +82,7 @@
 
 .card-body {
   margin: 13px 0 0 0;
-  color: rgba(225, 225, 225, 0.7);
+  color: rgba(225, 225, 225, 0.8);
   font-size: 1.2rem;
 }
 
@@ -95,7 +91,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 2rem;
+  padding-top: 1rem;
   z-index: 2;
 
   @media (min-width: 200px) and (max-width: 459px) {
@@ -106,18 +102,17 @@
 
 .btn-github {
   border: 1px solid #515151;
-  width: 160px;
-  height: 55px;
+  width: 40%;
+  padding: 0.4rem;
   display: flex;
   position: relative;
   background-color: transparent;
   align-items: center;
-    justify-content: center;
+  justify-content: center;
   z-index: 1;
   overflow: hidden;
   gap: 1rem;
   border-radius: 2rem;
-  background-color: #212121;
   cursor: pointer;
   transition: background-color 1s ease-in-out;
   transition: all 1s ease-in-out;
@@ -135,7 +130,7 @@
     transform: translateX(-100%);
   }
 
-  &:hover a, 
+  &:hover a,
   &:hover svg {
     color: #212121;
     transition: all 1s ease-in-out;
@@ -147,7 +142,7 @@
   }
 
   svg {
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: #e1e1e1;
     transition: 1s ease-in-out;
   }
@@ -156,7 +151,7 @@
     text-decoration: none;
     color: #e1e1e1;
     transition: 1s ease-in-out;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     letter-spacing: 1px;
   }
@@ -175,18 +170,17 @@
 
 .btn-page {
   border: 1px solid #515151;
-  width: 160px;
-  height: 55px;
+  width: 40%;
+  padding: 0.3rem;
   display: flex;
   position: relative;
   background-color: transparent;
   align-items: center;
-    justify-content: center;
+  justify-content: center;
   z-index: 1;
   overflow: hidden;
   gap: 1rem;
   border-radius: 2rem;
-  background-color: #212121;
   cursor: pointer;
   transition: background-color 1s ease-in-out;
   transition: all 1s ease-in-out;
@@ -204,7 +198,7 @@
     transform: translateX(100%);
   }
 
-  &:hover a, 
+  &:hover a,
   &:hover svg {
     color: #212121;
     transition: all 1s ease-in-out;
@@ -216,7 +210,7 @@
   }
 
   svg {
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: #e1e1e1;
     transition: 1s ease-in-out;
   }
@@ -225,7 +219,7 @@
     text-decoration: none;
     color: #e1e1e1;
     transition: 1s ease-in-out;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     letter-spacing: 1px;
   }
