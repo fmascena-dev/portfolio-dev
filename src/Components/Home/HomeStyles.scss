@@ -35,9 +35,12 @@
   flex-direction: column;
   color: #e1e1e1;
   width: 70%;
-  
-  
-  h1, h2, span, p, .home-image{
+
+  h1,
+  h2,
+  span,
+  p,
+  .home-image {
     z-index: 10;
   }
 
@@ -64,7 +67,7 @@
 }
 
 .home-image {
-  z-index: 10;
+  z-index: 1;
 }
 
 .home-image > img {

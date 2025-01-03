@@ -9,8 +9,8 @@ export default function Tecnologias() {
       <h1>Tecnologias</h1>
       <section className="section-cards">
         <div data-aos="fade-up-right" className="cards">
-          <FaHtml5 size={180} />
-          <div className="tec-description">
+          <FaHtml5 size={200} />
+          <div className="tech-description">
             <h2>HTML</h2>
             <p className="paragrafo">
               Linguagem de marcação utilizada para estruturar e apresentar
@@ -19,17 +19,17 @@ export default function Tecnologias() {
           </div>
         </div>
         <div data-aos="fade-up-left" className="cards">
-          <div className="tec-description">
+          <div className="tech-description">
             <h2>CSS</h2>
             <p className="paragrafo">
               Linguagem de estilo utilizada para estilizar os elementos da web.
             </p>
           </div>
-          <FaCss3 size={170} />
+          <FaCss3 size={190} />
         </div>
         <div data-aos="fade-up-right" className="cards">
-          <SiSass size={180} />
-          <div className="tec-description">
+          <SiSass size={200} />
+          <div className="tech-description">
             <h2>SCSS</h2>
             <p className="paragrafo">
               Framework CSS que permite a criação de estilos reutilizáveis e
@@ -38,7 +38,7 @@ export default function Tecnologias() {
           </div>
         </div>
         <div data-aos="fade-up-left" className="cards">
-          <div className="tec-description">
+          <div className="tech-description">
             <h2>Styled-Components</h2>
             <p className="paragrafo">
               Framework CSS que permite a criação de componentes reutilizáveis e
@@ -46,11 +46,11 @@ export default function Tecnologias() {
               Components.
             </p>
           </div>
-          <SiStyledcomponents size={180} />
+          <SiStyledcomponents size={190} />
         </div>
         <div data-aos="fade-up-right" className="cards">
-          <IoLogoJavascript size={170} />
-          <div className="tec-description">
+          <IoLogoJavascript size={190} />
+          <div className="tech-description">
             <h2>JavaScript</h2>
             <p className="paragrafo">
               Linguagem de programação que permite a criação de interatividade e
@@ -59,18 +59,18 @@ export default function Tecnologias() {
           </div>
         </div>
         <div data-aos="fade-up-left" className="cards">
-          <div className="tec-description">
+          <div className="tech-description">
             <h2>React</h2>
             <p className="paragrafo">
               Biblioteca JavaScript criado pelo Facebook para a criação de
               interfaces reativas.
             </p>
           </div>
-          <FaReact size={180} />
+          <FaReact size={200} />
         </div>
         <div data-aos="fade-up-right" className="cards">
-          <FaVuejs size={180} />
-          <div className="tec-description">
+          <FaVuejs size={200} />
+          <div className="tech-description">
             <h2>Vue.js</h2>
             <p className="paragrafo">
               Framework JavaScript criado pelo Vue.js para a criação de
