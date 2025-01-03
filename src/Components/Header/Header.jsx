@@ -20,6 +20,29 @@ export default function Header() {
       } else {
         setScrolled(false);
       }
+
+      // Atualiza o item do menu com base na seção visível
+      const sections = [
+        'home',
+        'tecnologias',
+        'projetos',
+        'contato',
+        'gallery',
+      ];
+      let currentSection = 'home';
+
+      for (let id of sections) {
+        const section = document.getElementById(id);
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 200 && rect.bottom >= 200) {
+            currentSection = id;
+            break;
+          }
+        }
+      }
+
+      setSelected(currentSection);
     };
 
     window.addEventListener('scroll', handleScroll);
