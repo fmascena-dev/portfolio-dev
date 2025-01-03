@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from './Header.module.scss';
-import { FaHome, FaImages, FaLaptopCode, FaCode } from 'react-icons/fa';
+import { FaHome, FaLaptopCode, FaCode, FaUserTie } from 'react-icons/fa';
 import { MdContactMail } from 'react-icons/md';
 
 export default function Header() {
@@ -27,7 +27,7 @@ export default function Header() {
         'tecnologias',
         'projetos',
         'contato',
-        'gallery',
+        'sobre',
       ];
       let currentSection = '';
 
@@ -118,14 +118,14 @@ export default function Header() {
           <span>Contato</span>
         </a>
         <a
-          href="#gallery"
+          href="#sobre"
           className={`${styles.navItem} ${
-            selected === 'gallery' ? styles.selected : ''
+            selected === 'sobre' ? styles.selected : ''
           }`}
-          onClick={(event) => handleMenuClick('gallery', event)}
+          onClick={(event) => handleMenuClick('sobre', event)}
         >
-          <FaImages className={styles.icon} />
-          <span>Gallery</span>
+          <FaUserTie className={styles.icon} />
+          <span>Sobre Mim</span>
         </a>
       </nav>
       <div className={styles.time}>{time}</div>

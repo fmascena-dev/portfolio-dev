@@ -1,4 +1,6 @@
+import { MdDownload } from 'react-icons/md';
 import './HomeStyles.scss';
+import { TbWorldShare } from 'react-icons/tb';
 
 export default function Home() {
   return (
@@ -10,7 +12,7 @@ export default function Home() {
             autoPlay
             loop
             muted
-            playsInline            
+            playsInline
             disablePictureInPicture
             controlsList="nodownload nofullscreen noplaybackrate"
           >
@@ -32,7 +34,14 @@ export default function Home() {
           </p>
           <div className="btn-home">
             <a href="/cv.pdf" download="meu-curriculo.pdf">
-              <button className="btn-curriculo">Baixar Currículo</button>
+              <button className="btn-curriculo">
+                <MdDownload /> Download CV
+              </button>
+            </a>
+            <a href="#">
+              <button className="btn-page-cv">
+                Page CV <TbWorldShare />
+              </button>
             </a>
           </div>
         </div>

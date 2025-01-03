@@ -79,24 +79,33 @@
 .btn-home {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .btn-curriculo {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   position: relative;
+  width: 210px;
+  height: 40px;
   background-color: transparent;
   margin-top: 2rem;
   color: #e1e1e1;
   font-size: 1.5rem;
   border: 1px solid #444;
-  padding: 0.5rem 1.2rem;
   background-color: transparent;
   border-radius: 2rem;
   cursor: pointer;
   transition: background-color 1s ease-in-out;
   z-index: 1;
   overflow: hidden;
+  text-decoration: none;
   transition: all 1s ease-in-out;
 
   &::before {
@@ -110,6 +119,49 @@
     z-index: -1;
     transition: all 1s ease-in-out;
     transform: translateX(-105%);
+  }
+
+  &:hover {
+    color: #212121;
+  }
+
+  &:hover:before {
+    transform: translateX(0);
+    color: #212121;
+  }
+}
+.btn-page-cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  position: relative;
+  width: 210px;
+  height: 40px;
+  background-color: transparent;
+  margin-top: 2rem;
+  color: #e1e1e1;
+  font-size: 1.5rem;
+  border: 1px solid #444;
+  background-color: transparent;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 1s ease-in-out;
+  z-index: 1;
+  overflow: hidden; 
+  transition: all 1s ease-in-out;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 255, 255);
+    z-index: -1;
+    transition: all 1s ease-in-out;
+    transform: translateX(100%);
   }
 
   &:hover {
