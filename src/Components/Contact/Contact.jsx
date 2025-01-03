@@ -18,10 +18,10 @@ export default function Contato() {
   };
 
   return (
-    <section className="form-container" id="contato">
+    <section data-aos="flip-right" className="form-container" id="contato">
       <h1>Entre em Contato</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div data-aos="fade-right" className="form-group">
+        <div className="form-group">
           <label htmlFor="nome">Nome Completo:</label>
           <input
             id="nome"
@@ -33,7 +33,7 @@ export default function Contato() {
           )}
         </div>
 
-        <div data-aos="fade-left" className="form-group">
+        <div className="form-group">
           <label htmlFor="email">Email:</label>
           <input
             id="email"
@@ -51,7 +51,7 @@ export default function Contato() {
           )}
         </div>
 
-        <div data-aos="fade-right" className="form-group">
+        <div className="form-group">
           <label htmlFor="telefone">Telefone:</label>
           <input
             id="telefone"
@@ -68,7 +68,7 @@ export default function Contato() {
             <p className="error-message">{errors.telefone.message}</p>
           )}
         </div>
-        <div data-aos="fade-left" className="form-group">
+        <div className="form-group">
           <label htmlFor="assunto">Assunto:</label>
           <input
             id="assunto"
@@ -80,7 +80,7 @@ export default function Contato() {
           )}
         </div>
 
-        <div data-aos="fade-right" className="form-group">
+        <div className="form-group">
           <label htmlFor="mensagem">Mensagem:</label>
           <textarea
             id="mensagem"

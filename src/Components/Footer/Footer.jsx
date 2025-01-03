@@ -8,7 +8,7 @@ export default function Footer() {
     <footer>
       <div className={styles.developer}>
         <h2>
-          DESENVOLVIDO POR <span>FELIPE MASCENA</span>
+          DESENVOLVIDO POR <span>&lt;FelipeMascena /&gt;</span>
         </h2>
       </div>
       <div className={styles.container}>

@@ -3,10 +3,9 @@
   max-width: 600px;
   margin: 5rem auto;
   padding: 2rem;
-  background-color: #191919;
+  background-color: transparent;
   border-radius: 1rem;
-  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.2);
-  
+  border: 1px solid rgba(225, 225, 225, 0.4);
 
   h1 {
     text-align: center;
@@ -21,8 +20,9 @@
     label {
       display: block;
       margin-bottom: 5px;
-      font-weight: bold;
-      color: rgba(225, 225, 225, 0.8);
+      font-weight: 500;
+      font-size: 1.1rem;
+      color: rgba(255, 225, 225, 1);
     }
 
     input,
@@ -33,7 +33,7 @@
       border-radius: 0.5rem;
       font-size: 1rem;
       color: #e1e1e1;
-      background: #444;
+      background: #202020;
 
       &:focus {
         border-color: #00d9ff;
@@ -47,15 +47,14 @@
     }
 
     .error-message {
-      color: #d9534f;
+      color: #ff0800;
       font-size: 0.875rem;
       margin-top: 5px;
     }
   }
 
   .submit-button {
-    width: 130px;
-    height: 35px;
+    padding: 0.3rem 2rem;
     display: flex;
     position: relative;
     background-color: transparent;
@@ -66,9 +65,8 @@
     font-size: 1.1rem;
     font-weight: bold;
     gap: 1rem;
-    border: 1px solid #555;
+    border: 1px solid #777;
     border-radius: 2rem;
-    background-color: #212121;
     cursor: pointer;
     color: #e1e1e1;
     transition: background-color 1s ease-in-out;

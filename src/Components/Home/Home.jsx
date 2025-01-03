@@ -10,7 +10,7 @@ export default function Home() {
             autoPlay
             loop
             muted
-            playsInline
+            playsInline            
             disablePictureInPicture
             controlsList="nodownload nofullscreen noplaybackrate"
           >
