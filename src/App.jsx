@@ -8,6 +8,7 @@ import Home from './Components/Home/Home.jsx';
 import Technologies from './Components/Technologies/Technologies.jsx';
 import Projects from './Components/Projects/Projects.jsx';
 import Contact from './Components/Contact/Contact.jsx';
+import About from './Components/About/About.jsx';
 
 export default function App() {
   useEffect(() => {
@@ -28,6 +29,7 @@ export default function App() {
       <Technologies />
       <Projects />
       <Contact />
+      <About />
       <Footer />
     </>
   );
