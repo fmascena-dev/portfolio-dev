@@ -5,7 +5,7 @@ import { MdContactMail } from 'react-icons/md';
 
 export default function Header() {
   const [time, setTime] = useState('');
-  const [selected, setSelected] = useState(''); // Menu selecionado
+  const [selected, setSelected] = useState('home'); // Menu selecionado
   const [scrolled, setScrolled] = useState(false); // Estado do scroll
 
   useEffect(() => {
